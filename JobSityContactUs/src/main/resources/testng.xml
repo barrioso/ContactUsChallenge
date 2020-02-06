@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Contact Us Page Test Automation Test Suite">
+
+
+	
+	<test name="Contact Us Test Cases">
+		<classes>
+			<class name="com.contactUs.qa.TestCases.HomePageTest"></class>
+			<class name="com.contactUs.qa.TestCases.ContactUsPageTest"></class>
+			
+			
+		</classes>
+	</test>
+</suite>

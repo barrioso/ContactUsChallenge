@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="1" failed="0" ignored="0" total="6" passed="5">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="80193" started-at="2020-02-06T00:12:33 CST" finished-at="2020-02-06T00:13:54 CST">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="80193" started-at="2020-02-06T00:12:33 CST" finished-at="2020-02-06T00:13:54 CST">
+      <class name="com.contactUs.qa.TestCases.ContactUsPageTest">
+        <test-method status="SKIP" signature="verifyMessageAlertTestData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.contactUs.qa.TestCases.ContactUsPageTest@1efed156]" name="verifyMessageAlertTestData" duration-ms="0" started-at="2020-02-06T00:12:34 CST" data-provider="contactUsTestData" finished-at="2020-02-06T00:12:34 CST">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[java.lang.NullPointerException]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: java.lang.NullPointerException
+at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:50)
+at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:146)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:820)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:762)
+at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:60)
+at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:39)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:771)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.lang.NullPointerException
+at com.contactus.qa.TestUtil.TestUtil.getTestData(TestUtil.java:43)
+at com.contactUs.qa.TestCases.ContactUsPageTest.contactUsTestData(ContactUsPageTest.java:83)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:77)
+at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:46)
+... 25 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyMessageAlertTestData -->
+        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:com.contactUs.qa.TestCases.ContactUsPageTest@1efed156]" name="launchBrowser" is-config="true" duration-ms="12992" started-at="2020-02-06T00:12:34 CST" finished-at="2020-02-06T00:12:47 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method status="PASS" signature="verifyWarningAlertEmailEmtpyFieldTest()[pri:2, instance:com.contactUs.qa.TestCases.ContactUsPageTest@1efed156]" name="verifyWarningAlertEmailEmtpyFieldTest" duration-ms="2871" started-at="2020-02-06T00:12:47 CST" finished-at="2020-02-06T00:12:50 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyWarningAlertEmailEmtpyFieldTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.contactUs.qa.TestCases.ContactUsPageTest@1efed156]" name="tearDown" is-config="true" duration-ms="766" started-at="2020-02-06T00:12:50 CST" finished-at="2020-02-06T00:12:50 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:com.contactUs.qa.TestCases.ContactUsPageTest@1efed156]" name="launchBrowser" is-config="true" duration-ms="14397" started-at="2020-02-06T00:12:50 CST" finished-at="2020-02-06T00:13:05 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method status="PASS" signature="verifyWarningAlertSubjectEmtpyFieldTest()[pri:3, instance:com.contactUs.qa.TestCases.ContactUsPageTest@1efed156]" name="verifyWarningAlertSubjectEmtpyFieldTest" duration-ms="3847" started-at="2020-02-06T00:13:05 CST" finished-at="2020-02-06T00:13:09 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyWarningAlertSubjectEmtpyFieldTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.contactUs.qa.TestCases.ContactUsPageTest@1efed156]" name="tearDown" is-config="true" duration-ms="733" started-at="2020-02-06T00:13:09 CST" finished-at="2020-02-06T00:13:09 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:com.contactUs.qa.TestCases.ContactUsPageTest@1efed156]" name="launchBrowser" is-config="true" duration-ms="11901" started-at="2020-02-06T00:13:09 CST" finished-at="2020-02-06T00:13:21 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method status="PASS" signature="verifyWarningAlertMessageEmtpyFieldTest()[pri:4, instance:com.contactUs.qa.TestCases.ContactUsPageTest@1efed156]" name="verifyWarningAlertMessageEmtpyFieldTest" duration-ms="2730" started-at="2020-02-06T00:13:21 CST" finished-at="2020-02-06T00:13:24 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyWarningAlertMessageEmtpyFieldTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.contactUs.qa.TestCases.ContactUsPageTest@1efed156]" name="tearDown" is-config="true" duration-ms="664" started-at="2020-02-06T00:13:24 CST" finished-at="2020-02-06T00:13:25 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:com.contactUs.qa.TestCases.ContactUsPageTest@1efed156]" name="launchBrowser" is-config="true" duration-ms="10827" started-at="2020-02-06T00:13:25 CST" finished-at="2020-02-06T00:13:36 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method status="PASS" signature="verifySuccessMessageAlertTest()[pri:5, instance:com.contactUs.qa.TestCases.ContactUsPageTest@1efed156]" name="verifySuccessMessageAlertTest" duration-ms="3021" started-at="2020-02-06T00:13:36 CST" finished-at="2020-02-06T00:13:39 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySuccessMessageAlertTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.contactUs.qa.TestCases.ContactUsPageTest@1efed156]" name="tearDown" is-config="true" duration-ms="649" started-at="2020-02-06T00:13:39 CST" finished-at="2020-02-06T00:13:39 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:com.contactUs.qa.TestCases.ContactUsPageTest@1efed156]" name="launchBrowser" is-config="true" duration-ms="12601" started-at="2020-02-06T00:13:39 CST" finished-at="2020-02-06T00:13:52 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method status="PASS" signature="verifyContactUsPageTitleTest()[pri:6, instance:com.contactUs.qa.TestCases.ContactUsPageTest@1efed156]" name="verifyContactUsPageTitleTest" duration-ms="1020" started-at="2020-02-06T00:13:52 CST" finished-at="2020-02-06T00:13:53 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyContactUsPageTitleTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.contactUs.qa.TestCases.ContactUsPageTest@1efed156]" name="tearDown" is-config="true" duration-ms="804" started-at="2020-02-06T00:13:53 CST" finished-at="2020-02-06T00:13:54 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.contactUs.qa.TestCases.ContactUsPageTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
