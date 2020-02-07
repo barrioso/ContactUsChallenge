@@ -85,16 +85,5 @@ public class ContactUsPage extends TestBase {
 		return successMessageAlert.getText();
 	}
 	
-	public String verifySuccesMessageAlert(String subjectNum, String emailaccount, String orderNum, String messageText){
-		Select subjectDrp = new Select(driver.findElement(By.id("id_contact")));
-		subjectDrp.selectByVisibleText(subjectNum);
-		emailAsccountTxtBox.sendKeys(emailaccount);
-		orderNumTxtBox.sendKeys(orderNum);
-		messageTxtBox.sendKeys(messageText);
-		submitBtn.click();
-		
-		return successMessageAlert.getText();
-	}
-	
 		
 }

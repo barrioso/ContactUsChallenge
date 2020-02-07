@@ -36,7 +36,7 @@ public class ContactUsPageTest extends TestBase {
 		contactUsPage = homePage.clickOnContactsLink(); 
 	}
 	
-	@Test(priority=6)
+	@Test(priority=5)
 	public void verifyContactUsPageTitleTest() throws InterruptedException{
 		Thread.sleep(1000);
 		expectedResult = "Contact us - My Store";
@@ -69,7 +69,15 @@ public class ContactUsPageTest extends TestBase {
 		
 	}
 	
-	@Test(priority=5)
+	@Test(priority=1)
+	public void verifySuccessMessageAlertTestHardcoded() throws InterruptedException{
+		Thread.sleep(1000);
+		expectedResult = "Your message has been successfully sent to our team-FAILED TEST HARDCODED.";
+		actualResult = contactUsPage.verifySuccesMessageAlert();
+		Assert.assertEquals(actualResult, expectedResult);
+	}
+	
+	@Test(priority=6)
 	public void verifySuccessMessageAlertTest() throws InterruptedException{
 		Thread.sleep(1000);
 		expectedResult = "Your message has been successfully sent to our team.";
@@ -77,21 +85,6 @@ public class ContactUsPageTest extends TestBase {
 		Assert.assertEquals(actualResult, expectedResult);
 	}
 		
-	
-	@DataProvider
-	public Object [][] contactUsTestData() {
-		Object data [][] = TestUtil.getTestData(sheetName);
-		return data;
-	}
-	
-	@Test(priority=1, dataProvider="contactUsTestData")
-	public void verifyMessageAlertTestData(String subjetText, String emailAddress, String orderID, String messageDetails){
-		//Thread.sleep(1000);
-		expectedResult = "Your message has been successfully sent to our team.";
-		actualResult = contactUsPage.verifySuccesMessageAlert(subjetText, emailAddress, orderID, messageDetails);
-		Assert.assertEquals(actualResult, expectedResult);
-	}
-	
 	
 	@AfterMethod
 	public void tearDown(){
