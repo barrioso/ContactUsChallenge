@@ -15,6 +15,9 @@ import com.contactus.qa.TestUtil.TestUtil;
 
 public class TestBase {
 	
+	/*This class contains the "initialization" method which is extended across the others classes to use the drive object and chrome driver*/
+	
+	
 	public static WebDriver driver;
 	public static Properties prop;
 	

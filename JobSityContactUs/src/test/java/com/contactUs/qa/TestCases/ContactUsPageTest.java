@@ -36,6 +36,10 @@ public class ContactUsPageTest extends TestBase {
 		contactUsPage = homePage.clickOnContactsLink(); 
 	}
 	
+	/*Test Name: ----*/
+	/*Test user to validate if the title page is correct    
+	 */
+	
 	@Test(priority=5)
 	public void verifyContactUsPageTitleTest() throws InterruptedException{
 		Thread.sleep(1000);
@@ -43,6 +47,12 @@ public class ContactUsPageTest extends TestBase {
 		actualResult = contactUsPage.verifyContactUsPageTitle();
 		Assert.assertEquals(actualResult, expectedResult);
 	}
+	
+	/*Test Name: TC015_Given_ContactUs_page_when_Email_empty_then_message_NOT_submitted_and_warning_message_displayed*/
+	/*Given the user goes to Contact Us page 
+	 * when the user leaves the Message field empty and Submit the form
+	 * then the message displayed should be "The message cannot be blank.    
+	 */
 	
 	@Test(priority=2)
 	public void verifyWarningAlertEmailEmtpyFieldTest() throws InterruptedException{
@@ -52,6 +62,12 @@ public class ContactUsPageTest extends TestBase {
 		Assert.assertEquals(actualResult, expectedResult);
 	}
 	
+	/*Test Name: TC018_Given_ContactUs_page_when_Subject_empty_then_message_NOT_submitted_and_warning_message_displayed*/
+	/*Given the user goes to Contact Us page 
+	 * when the user leaves the Subject drop down field empty and Submit the form 
+	 * then the message displayed should be "Please select a subject from the list provided."   
+	 */
+	
 	@Test(priority=3)
 	public void verifyWarningAlertSubjectEmtpyFieldTest() throws InterruptedException{
 		Thread.sleep(1000);
@@ -59,6 +75,12 @@ public class ContactUsPageTest extends TestBase {
 		actualResult = contactUsPage.verifyEmptySubjetWarningMessage();
 		Assert.assertEquals(actualResult, expectedResult);
 	}
+	
+	/*Test Name: TC016_Given_ContactUs_page_when_Message_empty_then_message_NOT_submitted_and_warning_message_displayed*/
+	/*Given the user goes to Contact Us page 
+	 * when the user leaves the Message field empty and Submit the form
+	 * then the message displayed should be "The message cannot be blank.    
+	 */
 	
 	@Test(priority=4)
 	public void verifyWarningAlertMessageEmtpyFieldTest() throws InterruptedException{
@@ -69,6 +91,12 @@ public class ContactUsPageTest extends TestBase {
 		
 	}
 	
+	/*Test Name: ------*/
+	/*Test Description: Test to force to fail the "success form submitted"
+	 * Expected result changed from "Your message has been successfully sent to our team."
+	 * to  "Your message has been successfully sent to our team-FAILED TEST HARDCODED."   
+	 */
+	
 	@Test(priority=1)
 	public void verifySuccessMessageAlertTestHardcoded() throws InterruptedException{
 		Thread.sleep(1000);
@@ -76,6 +104,12 @@ public class ContactUsPageTest extends TestBase {
 		actualResult = contactUsPage.verifySuccesMessageAlert();
 		Assert.assertEquals(actualResult, expectedResult);
 	}
+	
+	/*Test Name: TC014_Given_ContactUs_page_when_fillout_all_fields_then_message_submitted_succesfully*/
+	/*Test Description: Given the user goes to Contact Us page 
+	 * when the user fills out all the available fields 
+	 * then the message displayed should be "Your message has been successfully sent to our team."   
+	 */
 	
 	@Test(priority=6)
 	public void verifySuccessMessageAlertTest() throws InterruptedException{

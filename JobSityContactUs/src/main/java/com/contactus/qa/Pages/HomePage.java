@@ -11,6 +11,9 @@ import com.contactus.qa.TestBase.TestBase;
 
 public class HomePage extends TestBase {
 	
+	/*This class contains all the objects locators for the Home page */
+	
+	
 	// Object Repository Definition 
 	@FindBy(id = "contact-link")
 	WebElement contactUsLnk;
